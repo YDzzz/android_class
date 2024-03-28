@@ -6,32 +6,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="2"
+    android:stretchColumns="0,2,3"
+    android:background="@mipmap/biaoge"
     tools:context=".MainActivity">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1"/>
+    <Space
+        android:layout_height="420dp"/>
+    <TableRow>
+        <TextView/>
+        <TextView
+            android:text="username"/>
+        <EditText
+            android:hint="please_input_username" />
+        <TextView/>
+    </TableRow>
 
     <TableRow>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button2"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button3"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button4"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <TextView/>
+        <TextView android:text="password" />
 
-            android:text="Button5"/>
+        <EditText
+            android:hint="please_inter_password" />
+        <TextView/>
     </TableRow>
+    <TableRow>
+        <TextView/>
+        <Button
+            android:text="login in"/>
+        <Button
+            android:text="login up"/>
+        <TextView/>
+    </TableRow>
+
 
 </TableLayout>
