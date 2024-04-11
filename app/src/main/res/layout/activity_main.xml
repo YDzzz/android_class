@@ -1,67 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:rowCount="6"
-    android:columnCount="4"
-    android:orientation="horizontal"
-    android:layout_gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="0"
-        android:textSize="80sp"
-        android:layout_columnSpan="4"/>
-
-        <Button
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/a"
+            android:id="@+id/image2"
+            android:importantForAccessibility="no" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="back"
-            android:textSize="20sp"
-            android:layout_columnSpan="2"
-            android:layout_gravity="fill"/>
-        <Button
+            android:text=" aaaa"
+            android:textColor="#6495ED"
+            android:textSize="20dp"
+            android:id="@+id/name2"
+            android:layout_toRightOf="@+id/image2"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="clear"
-            android:textSize="20sp"
-            android:layout_columnSpan="2"
-            android:layout_gravity="fill"/>
+            android:textSize="30dp"
+            android:text=" eeee"
+            android:id="@+id/content2"
+            android:layout_toRightOf="@+id/image2"
+            android:layout_below="@+id/name2"
+            android:minLines="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yesterday"
+            android:id="@+id/time2"
+            android:layout_below="@+id/content2"
+            android:layout_toRightOf="@+id/image2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/c"
+            android:layout_below="@+id/content2"
+            android:layout_alignParentRight="true"/>
 
-        <Button
-            android:text="1"/>
-        <Button
-            android:text="2"/>
-    <Button
-        android:text="3"/>
-    <Button
-        android:text="+"/>
-    <Button
-        android:text="4"/>
-    <Button
-        android:text="5"/>
-    <Button
-        android:text="6"/>
-    <Button
-        android:text="-"/>
-    <Button
-        android:text="7"/>
-    <Button
-        android:text="8"/>
-    <Button
-        android:text="9"/>
-    <Button
-        android:text="0"/>
-    <Button
-        android:text="2"/>
-    <Button
-        android:text="2"/>
-    <Button
-        android:text="2"/>
-    <Button
-        android:text="="/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/b"
+            android:id="@+id/image"
+            android:importantForAccessibility="no" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6495ED"
+            android:text=" aaaa"
+            android:textSize="20dp"
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text=" eeee"
+            android:id="@+id/content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/name"
+            android:minLines="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yesterday"
+            android:id="@+id/time"
+            android:layout_below="@+id/content"
+            android:layout_toRightOf="@+id/image"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/c"
+            android:layout_below="@+id/content"
+            android:layout_alignParentRight="true"/>
 
-</GridLayout>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
