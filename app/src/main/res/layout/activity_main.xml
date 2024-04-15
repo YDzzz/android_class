@@ -6,43 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    android:background="#ECEBEB"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="top"
-        android:background="#FFFFFF"
-        android:hint="say somthing ,fuck u"
-        android:inputType="textMultiLine"
-        android:textColorHint="#000000"
-        android:lines="5"/>
-
-    <LinearLayout
+        android:hint="please input user name"/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="#FFFFFF">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/addpicture"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="add picture"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-
-    <ImageView
+        android:hint="please input psw"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@mipmap/bottom"
-        android:scaleType="fitXY"/>
+        android:text="login in"/>
 
 
 </LinearLayout>
