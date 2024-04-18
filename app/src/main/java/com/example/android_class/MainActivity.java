@@ -1,8 +1,10 @@
 package com.example.android_class;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -23,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button login_button = findViewById(R.id.login);
-        login_button.setOnClickListener(v -> {
-            Toast.makeText(MainActivity.this,"login in success", Toast.LENGTH_SHORT).show();
+        ImageButton start_button = findViewById(R.id.start_game);
+        start_button.setOnClickListener(v -> {
+            Toast.makeText(this, "login in success", Toast.LENGTH_SHORT).show();
         });
+        
+        ImageButton switch_button = findViewById(R.id.switch_id);
+        switch_button.setOnClickListener(v -> {
+            Toast.makeText(this, "switch success", Toast.LENGTH_SHORT).show();
+        });
+        
     }
 }

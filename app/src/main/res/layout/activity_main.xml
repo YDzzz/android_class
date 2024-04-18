@@ -6,20 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#EAEAEA"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal|bottom"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/top"/>
-
-    <Button
-        android:layout_width="match_parent"
+        android:id="@+id/start_game"
+        android:src="@mipmap/bt_start"
+        android:background="#0000"/>
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login in"
-        android:id="@+id/login"
-        android:textStyle="bold"
-        android:background="#03A9F4"/>
+        android:id="@+id/switch_id"
+        android:src="@mipmap/bt_switch"
+        android:background="#0000"
+        android:layout_marginBottom="30dp"/>
+
+
 
 </LinearLayout>
