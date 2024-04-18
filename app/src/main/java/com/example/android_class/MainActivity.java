@@ -1,6 +1,9 @@
 package com.example.android_class;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        Button login_button = findViewById(R.id.login);
+        login_button.setOnClickListener(v -> {
+            Toast.makeText(MainActivity.this,"login in success", Toast.LENGTH_SHORT).show();
         });
     }
 }
