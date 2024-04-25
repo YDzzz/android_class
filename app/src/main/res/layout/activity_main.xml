@@ -5,24 +5,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bg"
-    android:gravity="center_horizontal|bottom"
-    tools:context=".MainActivity">
-    <ImageButton
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feiji_top" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/start_game"
-        android:src="@mipmap/bt_start"
-        android:background="#0000"/>
-    <ImageButton
+        android:text="login to get "/>
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/switch_id"
-        android:src="@mipmap/bt_switch"
-        android:background="#0000"
-        android:layout_marginBottom="30dp"/>
-
-
+        android:text="get your public information"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get your public information"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get your public information"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirm"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel"/>
 
 </LinearLayout>
