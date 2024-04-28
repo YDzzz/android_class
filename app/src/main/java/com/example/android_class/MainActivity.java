@@ -1,9 +1,8 @@
 package com.example.android_class;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.SeekBar;
+import android.widget.Button;
+import android.widget.RatingBar;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -24,23 +23,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        SeekBar seekBar = findViewById(R.id.seekbar);
-        ImageView imageView = findViewById(R.id.image);
-        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                imageView.setImageAlpha(progress);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
+        RatingBar ratingBar = findViewById(R.id.rating);
+        Button submit_button = findViewById(R.id.submit);
+        submit_button.setOnClickListener(v->{
+            float ratingValue = ratingBar.getRating();
+            Toast.makeText(this, "rating is " + String.valueOf(ratingValue), Toast.LENGTH_SHORT).show();
         });
-
-
     }
 }

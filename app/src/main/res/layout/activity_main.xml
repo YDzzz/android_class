@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@drawable/xing1"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image"
-        android:src="@drawable/lijiang"/>
+        android:id="@+id/submit"
+        android:text="submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"/>
 
-    <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:max="255"
-        android:progress="255" />
+        android:id="@+id/storeEva"
+        android:textSize="25sp"
+        android:text="store evaluation"
+        android:layout_above="@+id/submit"
+        android:layout_marginBottom="200dp"/>
 
-</LinearLayout>
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="5"
+        android:layout_above="@+id/submit"
+        android:layout_marginBottom="150dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
